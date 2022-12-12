@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--=============== FAVICON ===============-->
+        <link rel="shortcut icon" href="/assets/img/favicon.png" type="image/x-icon">
+        
+        <!--=============== REMIX ICONS ===============-->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <title>Mini portfolio website - Bedimcode</title>
+    </head>
+    <body>
+        <!--=============== HEADER PROFILE ===============-->
+        <header class="profile container">
+            <!-- Theme button -->
+            <i class="ri-contrast-2-line change-theme" id="theme-button"></i>
+
+            <div class="profile__container grid">
+                <div class="profile__data">
+                    <div class="profile__border">
+                        <div class="profile__perfil">
+                            <img src="assets/img/diegomora1.png" alt="fotoperfil">
+                        </div>
+                    </div>
+                    <h2 class="profile__name">Diego Mora</h2>
+                    <h3 class="profile__profession">Soy un Frontend apasionado.</h3>
+
+                    <ul class="profile__social">
+                        <a href="https://github.com/MoratDev" target="_blank" class="profile__social-link">
+                            <i class="ri-github-fill"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/demc-dev/" target="_blank"class="profile__social-link">
+                            <i class="ri-linkedin-box-fill"></i>
+                        </a>
+                    </ul>
+                </div>
+                
+                <div class="profile__info">
+                    <h3 class="profile__info-title">Acerca de mí</h3>
+                    <p class="profile__info-description">Tengo 2 años de experiencia en desarrollo web bajo el marco de trabajo SCRUM para el sector financiero, con fuerte interés en convertirme en desarrollador full stack.
+                    </br></br>Apasionado por la tecnología, con mucha motivación por seguir aprendiendo y enseñar a los demás.</p>
+                </div>
+
+                <div class="profile__button-cv">
+                    <a download="" href="/assets/pdf/DiegoMora-DesarrolladorFrontend.pdf" class="button">
+                        Download CV <i class="ri-download-line"></i>
+                    </a>
+                </div>
+
+                <div class="profile__contact">
+                    <h3 class="profile__contact-title">Contáctame</h3>
+                    <div class="profile__contact-email">
+                        <a href="mailto:diegomorademc@gmail.com" target="_blank" class="profile__contact-link icon-email">
+                            <i class="ri-mail-line"> </i>
+                        </a>
+                        <a href="mailto:diegomorademc@gmail.com" target="_blank" class="profile__contact-link">
+                            diegomorademc@gmail.com
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!--=============== MAIN ===============-->
+        <main class="main">
+            <section class="filters container">
+                <!--=============== FILTERS TABS ===============-->
+                <ul class="filters__content">
+                    <button class="filters__button filter-tab-activate" data-target="#projects">
+                        Projects
+                    </button>
+                    <button class="filters__button" data-target="#skills">
+                        Skill
+                    </button>
+                </ul>
+
+                <div class="filters__sections">
+                    <!--=============== PROJECTS ===============-->
+                    <div class="projects__content grid filters__active" data-content id="projects">
+                        <article class="projects__card">
+                            <img src="/assets/img/project1.jpg" alt="" class="projects__img">
+                            <div class="projects__modal">
+                                <div>
+                                    <span class="projects__subtitle">Web</span>
+                                    <h3 class="projects__title">Payment Site</h3>
+                                    <a href="" class="projects__button button button__small">
+                                        <i class="ri-link"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="projects__technology">
+                                <h3 class="projects__title">Tecnologías</h3>
+                                <div>
+                                    <img src="/assets/img/project1.jpg" alt="" class="projects__img">
+                                    <img src="/assets/img/project1.jpg" alt="" class="projects__img">
+                                </div>
+                            </div>
+                        </article>
+                        <article class="projects__card">
+                            <img src="/assets/img/project2.jpg" alt="" class="projects__img">
+                            <div class="projects__modal">
+                                <div>
+                                    <span class="projects__subtitle">Web</span>
+                                    <h3 class="projects__title">Portafolio</h3>
+                                    <a href="" class="projects__button button button__small">
+                                        <i class="ri-link"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="projects__technology">
+                                <h3 class="projects__title">Tecnologías</h3>
+                                <div>
+                                    <img src="/assets/img/project1.jpg" alt="" class="projects__img">
+                                    <img src="/assets/img/project1.jpg" alt="" class="projects__img">
+                                </div>
+                            </div>
+                        </article>
+                        <article class="projects__card">
+                            <img src="/assets/img/project3.jpg" alt="" class="projects__img">
+                            <div class="projects__modal">
+                                <div>
+                                    <span class="projects__subtitle">Movil</span>
+                                    <h3 class="projects__title">Fast food app</h3>
+                                    <a href="" class="projects__button button button__small">
+                                        <i class="ri-link"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="projects__technology">
+                                <h3 class="projects__title">Tecnologías</h3>
+                                <div>
+                                    <img src="/assets/img/project1.jpg" alt="" class="projects__img">
+                                    <img src="/assets/img/project1.jpg" alt="" class="projects__img">
+                                </div>
+                            </div>
+                        </article>
+                        <article class="projects__card">
+                            <img src="/assets/img/project4.jpg" alt="" class="projects__img">
+                            <div class="projects__modal">
+                                <div>
+                                    <span class="projects__subtitle">Movil</span>
+                                    <h3 class="projects__title">Travel app</h3>
+                                    <a href="" class="projects__button button button__small">
+                                        <i class="ri-link"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="projects__technology">
+                                <h3 class="projects__title">Tecnologías</h3>
+                                <div>
+                                    <img src="/assets/img/project1.jpg" alt="" class="projects__img">
+                                    <img src="/assets/img/project1.jpg" alt="" class="projects__img">
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <!--=============== SKILLS ===============-->
+                    <div class="skills__content grid" data-content id="skills">
+                        <div class="skills__area fd">
+                            <h3 class="skills__title">
+                                Frontend Developer
+                            </h3>
+                            <div class="skills__box">
+                                <div class="skills__group">
+                                    <div class="skills__data">
+                                        <img src="/assets/img/html-5.png" alt="" class="projects__img">                                        
+                                        <div>
+                                            <h3 class="skills__name">HTML5</h3>
+                                            <span class="skills__level">Avanzado</span>
+                                        </div>
+                                    </div>
+                                    <div class="skills__data">
+                                        <img src="/assets/img/css-3.png" alt="" class="projects__img"> 
+                                        <div>
+                                            <h3 class="skills__name">CSS</h3>
+                                            <span class="skills__level">Intermedio</span>
+                                        </div>
+                                    </div>
+                                    <div class="skills__data">
+                                        <img src="/assets/img/bootstrap.png" alt="" class="projects__img"> 
+                                        <div>
+                                            <h3 class="skills__name">Bootstrap</h3>
+                                            <span class="skills__level">Intermedio</span>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+
+                                <div class="skills__group">
+                                    <div class="skills__data">
+                                        <img  src="/assets/img/java-script.png" alt="" class="projects__img"> 
+                                        <div>
+                                            <h3 class="skills__name">JavaScript</h3>
+                                            <span class="skills__level">Intermedio</span>
+                                        </div>
+                                    </div>
+                                    <div class="skills__data">
+                                        <img src="/assets/img/angular.png" alt="" class="projects__img"> 
+                                        <div>
+                                            <h3 class="skills__name">Angular</h3>
+                                            <span class="skills__level">Intermedio</span>
+                                        </div>
+                                    </div>
+                                    <div class="skills__data">
+                                        <img src="/assets/img/react.png" alt="" class="projects__img"> 
+                                        <div>
+                                            <h3 class="skills__name">React</h3>
+                                            <span class="skills__level">Basico</span>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>     
+
+                        <div class="skills__area bd">
+                            <h3 class="skills__title">
+                                Backend Developer
+                            </h3>
+                            <div class="skills__box">
+                                <div class="skills__group">
+                                    <div class="skills__data">
+                                        <img src="/assets/img/java.png" alt="" class="projects__img"> 
+                                        <div>
+                                            <h3 class="skills__name">Java</h3>
+                                            <span class="skills__level">Basico</span>
+                                        </div>
+                                    </div>
+                                    <div class="skills__data">
+                                        <img src="/assets/img/node-js.png" alt="" class="projects__img"> 
+                                        <div>
+                                            <h3 class="skills__name">NodeJs</h3>
+                                            <span class="skills__level">Basico</span>
+                                        </div>
+                                    </div>
+            
+                                    <div class="skills__data">
+                                        <img src="/assets/img/express.png" alt="" class="projects__img"> 
+                                        <div>
+                                            <h3 class="skills__name">Express</h3>
+                                            <span class="skills__level">Basico</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="skills__group">
+                                    <div class="skills__data">
+                                        <img src="/assets/img/mysql.png" alt="" class="projects__img"> 
+                                        <div>
+                                            <h3 class="skills__name">MySQL</h3>
+                                            <span class="skills__level">Basico</span>
+                                        </div>
+                                    </div>
+                                    <div class="skills__data">
+                                        <img src="/assets/img/mongo.png" alt="" class="projects__img"> 
+                                        <div>
+                                            <h3 class="skills__name">MongoDB</h3>
+                                            <span class="skills__level">Intermedio</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="skills__area hs">
+                            <h3 class="skills__title">
+                                Herramientas
+                            </h3>
+                            <div class="skills__box">
+                                <div class="skills__group">
+                                    <div class="skills__data">
+                                        <img src="/assets/img/git.png" alt="" class="projects__img"> 
+                                        <div>
+                                            <h3 class="skills__name">Git</h3>
+                                            <span class="skills__level">Intermedio</span>
+                                        </div>
+                                    </div>
+                                    <div class="skills__data">
+                                        <img src="/assets/img/azure-depvos.png" alt="" class="projects__img"> 
+                                        <div>
+                                            <h3 class="skills__name">Azure Depvos</h3>
+                                            <span class="skills__level">Intermedio</span>
+                                        </div>
+                                    </div>
+                                    <div class="skills__data">
+                                        <img src="/assets/img/postman.png" alt="" class="projects__img"> 
+                                        <div>
+                                            <h3 class="skills__name">Postman</h3>
+                                            <span class="skills__level">Intermedio</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="skills__group">
+                                    <div class="skills__data">
+                                        <img src="/assets/img/visual-studio-code.png" alt="" class="projects__img"> 
+                                        <div>
+                                            <h3 class="skills__name">VS Code</h3>
+                                            <span class="skills__level">Intermedio</span>
+                                        </div>
+                                    </div>
+                                    <div class="skills__data">
+                                        <img  src="/assets/img/figma.png" alt="" class="projects__img"> 
+                                        <div>
+                                            <h3 class="skills__name">Figma</h3>
+                                            <span class="skills__level">Intermedio</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>        
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!--=============== FOOTER ===============-->
+        <footer class="footer container">
+            <span class="footer__copy">
+                &#169; DiegoMora. All rigths reserved
+            </span>
+        </footer>
+
+        <!--=============== SCROLLREVEAL ===============-->
+        <script src=""></script>
+
+        <!--=============== MAIN JS ===============-->
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
