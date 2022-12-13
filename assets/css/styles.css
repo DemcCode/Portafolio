@@ -330,10 +330,17 @@ body.dark-theme{
   background: linear-gradient(180deg,
               hsla(var(--hue), 24%, 40%, .3) 0%,
               hsla(var(--hue), 24%, 4%, 1) 95%);
-  display: grid;
-  align-items: flex-end;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   padding: 1.5rem;
   transition: .3s;
+}
+
+.projects__technology img{
+  width: 30px;
+  height: 30px;
 }
 
 .projects__subtitle,
