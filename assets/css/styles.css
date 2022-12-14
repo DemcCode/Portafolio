@@ -227,9 +227,14 @@ body.dark-theme{
 }
 
 .profile__contact-link{
-  font-size: 1rem;
-  color: var(--first-color);
-  transition: .3s;
+    display: inline-flex;
+    align-items: center;
+    column-gap: .5rem;
+    font-size: 1rem;
+    color: var(--first-color);
+    padding: 1rem 1rem;
+    border-radius: .5rem;
+    transition: .3s;
 }
 
 .profile__contact-link:hover{
@@ -458,6 +463,12 @@ body.dark-theme{
   .profile__info-description{
     width: 90%;
   }
+
+  .profile__contact-link{
+    column-gap: .3rem;
+    font-size: 0.8rem;
+
+  }
 }
 
 /* For medium devices */
@@ -492,11 +503,11 @@ body.dark-theme{
   }
 
   .profile__info-description{
-    width: 370px;
+    width: 440px;
   }
   
   .filters__content{
-    width: 370px;
+    width: 440px;
     margin: 3rem auto
   }
   
