@@ -304,12 +304,13 @@ body.dark-theme{
   position: relative;
   border-radius: 1rem;
   overflow: hidden;
+  height: 250px;
 }
 
 .projects__card img{
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .projects__modal{
@@ -465,7 +466,6 @@ body.dark-theme{
   .profile__contact-link{
     column-gap: .3rem;
     font-size: 0.8rem;
-
   }
 }
 
