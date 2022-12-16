@@ -355,6 +355,8 @@ body.dark-theme{
 
 .projects__subtitle{
   font-size: var(--smaller-font-size);
+  display: flex;
+  flex-direction: row;
 }
 
 .projects__title{
