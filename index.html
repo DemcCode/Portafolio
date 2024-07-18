@@ -1,58 +1,84 @@
 <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en">
 
-        <!--=============== FAVICON ===============-->
-        <link rel="shortcut icon" href="/assets/img/favicon.png" type="image/x-icon">
-        
-        <!--=============== REMIX ICONS ===============-->
-        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <!--=============== CSS ===============-->
-        <link rel="stylesheet" href="assets/css/styles.css">
+    <!--=============== FAVICON ===============-->
+    <link rel="shortcut icon" href="/assets/img/favicon.png" type="image/x-icon">
 
-        <title>Portafolio Diego Mora</title>
-    </head>
-    <body>
-        <!--=============== HEADER PROFILE ===============-->
-        <header class="profile container">
+    <!--=============== REMIX ICONS ===============-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <title>Portafolio Diego Mora</title>
+</head>
+
+<body>
+    <!--=============== HEADER PROFILE ===============-->
+    <div class="contain__main">
+        <div class="profile container">
             <!-- Theme button -->
             <i class="ri-contrast-2-line change-theme" id="theme-button"></i>
 
             <div class="profile__container grid">
-                <div class="profile__data">
-                    <div class="profile__border">
-                        <div class="profile__perfil">
-                            <img src="assets/img/diegomora1.png" alt="fotoperfil">
+
+                <div class="profile__data-info">
+                    <div class="profile__data">
+                        <div class="profile__border">
+                            <div class="profile__perfil">
+                                <img src="assets/img/diegomora1.png" alt="fotoperfil">
+                            </div>
+                        </div>
+                        <h2 class="profile__name">Diego Mora</h2>
+                        <h3 class="profile__profession">Soy un desarrollador Frontend 🤟.</h3>
+
+                        <ul class="profile__social">
+                            <a href="https://github.com/DemcCode" target="_blank" class="profile__social-link">
+                                <i class="ri-github-fill"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/demc-dev/" target="_blank"
+                                class="profile__social-link">
+                                <i class="ri-linkedin-box-fill"></i>
+                            </a>
+                        </ul>
+                        <div class="profile__button-cv">
+                            <a download="" href="/assets/pdf/Desarrollador Frontend - DiegoMora.pdf" class="button">
+                                Descargar CV <i class="ri-download-line"></i>
+                            </a>
                         </div>
                     </div>
-                    <h2 class="profile__name">Diego Mora</h2>
-                    <h3 class="profile__profession">Soy un desarrollador Full Stack 🤟.</h3>
 
-                    <ul class="profile__social">
-                        <a href="https://github.com/MoratDev" target="_blank" class="profile__social-link">
-                            <i class="ri-github-fill"></i>
-                        </a>
-                        <a href="https://www.linkedin.com/in/demc-dev/" target="_blank"class="profile__social-link">
-                            <i class="ri-linkedin-box-fill"></i>
-                        </a>
-                    </ul>
-                </div>
-                
-                <div class="profile__info">
-                    <h3 class="profile__info-title">Acerca de mí</h3>
-                    <p class="profile__info-description">Tengo 3 años de experiencia en desarrollo web bajo el marco de trabajo SCRUM para el sector financiero y e-commerce, utilizando tecnologías como HTML, CSS, Sass, JavaScript, Java con Spring Boot, Angular, React, Oracle DB, conocimientos en Python, Node.js con express, Axio, bases de datos MySQL y MongoDB.
-                    </br></br>Manejo herramientas como Git, GitHub, GitLab, Azure DevOps, Postman, Figma y Visual Studio Code.
-                    </br></br>Me apasiona trabajar en equipo y enfrentar nuevos desafíos que me permitan seguir creciendo en mi carrera.</p>
-                </div>
-
-                <div class="profile__button-cv">
-                    <a download="" href="/assets/pdf/Desarrollador Full Stack - Diego Mora.pdf" class="button">
-                        Descargar CV <i class="ri-download-line"></i>
-                    </a>
-                </div>
+                    <div class="profile__info">
+                        <h3 class="profile__info-title">Acerca de mí</h3>
+                        <p class="profile__info-description">🚀 Con más de 3 años de experiencia como desarrollador web,
+                            me
+                            especializó en la creación de interfaces visuales atractivas y funcionales. Mi pericia
+                            incluye
+                            el
+                            uso de tecnologías como 💻HTML, CSS, Sass, JavaScript, TypeScript, VTEX IO, GraphQL y
+                            MongoDB,
+                            así
+                            como frameworks líderes como 📊 Angular y React para construir experiencias web dinámicas y
+                            altamente receptivas.✨ He trabajado en los sectores de comercio electrónico y financiero,
+                            desarrollando soluciones centradas en el 🤵‍♂️usuario.
+                            </br></br>✒️ Conocimientos en Python, Java, Spring Boot, Node.js con express, Axio, bases de
+                            datos
+                            MySQL y MongoDB, 🛠️ manejo herramientas como Git, GitHub, GitLab, Azure Devops, Postman,
+                            Figma
+                            y
+                            Visual Studio Code.
+                            </br></br>🌱 Me motiva continuamente el deseo de aprender y prosperar en entornos
+                            colaborativos
+                            y
+                            multidisciplinarios. 🚀 Estoy preparado para enfrentar nuevos desafíos que impulsen mi
+                            crecimiento
+                            profesional.</p>
+                    </div>
+                </div>                
 
                 <div class="profile__contact">
                     <h3 class="profile__contact-title">Contáctame</h3>
@@ -66,10 +92,11 @@
                     </div>
                 </div>
             </div>
-        </header>
+        </div>
 
         <!--=============== MAIN ===============-->
-        <main class="main">
+
+        <div class="main">
             <section class="filters container">
                 <!--=============== FILTERS TABS ===============-->
                 <ul class="filters__content">
@@ -90,7 +117,8 @@
                                 <div>
                                     <span class="projects__subtitle">Web - Movil</span>
                                     <h3 class="projects__title">Portafolio</h3>
-                                    <a href="https://portafolio-demc.netlify.app/" target="_blank" class="projects__button button button__small">
+                                    <a href="https://portafolio-demc.netlify.app/" target="_blank"
+                                        class="projects__button button button__small">
                                         <i class="ri-link"></i>
                                     </a>
                                 </div>
@@ -106,14 +134,16 @@
                                 <div>
                                     <span class="projects__subtitle">Web</span>
                                     <h3 class="projects__title">CRUD Productos</h3>
-                                    <a href="https://crud-productos-demc.netlify.app/"  target="_blank" class="projects__button button button__small">
+                                    <a href="https://crud-productos-demc.netlify.app/" target="_blank"
+                                        class="projects__button button button__small">
                                         <i class="ri-link"></i>
                                     </a>
                                 </div>
                             </div>
                             <div class="projects__technology">
                                 <h3 class="projects__title">Tecnologías</h3>
-                                <span class="projects__subtitle">HTML, CSS, Bootstrap, Angular15, TypeScript, NodeJS, Express, MySQL, Sequelize</span>
+                                <span class="projects__subtitle">HTML, CSS, Bootstrap, Angular15, TypeScript, NodeJS,
+                                    Express, MySQL, Sequelize</span>
                             </div>
                         </article>
                         <article class="projects__card">
@@ -122,7 +152,8 @@
                                 <div>
                                     <span class="projects__subtitle">Web - Movil</span>
                                     <h3 class="projects__title">App de Posts con Login</h3>
-                                    <a href="https://reto-titamedia-demc.netlify.app/"  target="_blank" class="projects__button button button__small">
+                                    <a href="https://reto-titamedia-demc.netlify.app/" target="_blank"
+                                        class="projects__button button button__small">
                                         <i class="ri-link"></i>
                                     </a>
                                 </div>
@@ -138,7 +169,8 @@
                                 <div>
                                     <span class="projects__subtitle">Web - Movil</span>
                                     <h3 class="projects__title">App de Citas</h3>
-                                    <a href="https://citas-demc.netlify.app/"  target="_blank" class="projects__button button button__small">
+                                    <a href="https://citas-demc.netlify.app/" target="_blank"
+                                        class="projects__button button button__small">
                                         <i class="ri-link"></i>
                                     </a>
                                 </div>
@@ -148,7 +180,7 @@
                                 <span class="projects__subtitle">HTML, CSS, Bootstrap, Angular15, TypeScript</span>
                             </div>
                         </article>
-                       
+
                     </div>
                     <!--=============== SKILLS ===============-->
                     <div class="skills__content grid" data-content id="skills">
@@ -159,55 +191,55 @@
                             <div class="skills__box">
                                 <div class="skills__group">
                                     <div class="skills__data">
-                                        <img src="/assets/img/html-5.png" alt="" class="projects__img">                                        
+                                        <img src="/assets/img/html-5.png" alt="" class="projects__img">
                                         <div>
                                             <h3 class="skills__name">HTML5</h3>
                                             <span class="skills__level">Avanzado</span>
                                         </div>
                                     </div>
                                     <div class="skills__data">
-                                        <img src="/assets/img/css-3.png" alt="" class="projects__img"> 
+                                        <img src="/assets/img/css-3.png" alt="" class="projects__img">
                                         <div>
                                             <h3 class="skills__name">CSS</h3>
                                             <span class="skills__level">Intermedio</span>
                                         </div>
                                     </div>
                                     <div class="skills__data">
-                                        <img src="/assets/img/bootstrap.png" alt="" class="projects__img"> 
+                                        <img src="/assets/img/bootstrap.png" alt="" class="projects__img">
                                         <div>
                                             <h3 class="skills__name">Bootstrap</h3>
                                             <span class="skills__level">Intermedio</span>
                                         </div>
                                     </div>
-                                    
+
                                 </div>
 
                                 <div class="skills__group">
                                     <div class="skills__data">
-                                        <img  src="/assets/img/java-script.png" alt="" class="projects__img"> 
+                                        <img src="/assets/img/java-script.png" alt="" class="projects__img">
                                         <div>
                                             <h3 class="skills__name">JavaScript</h3>
                                             <span class="skills__level">Intermedio</span>
                                         </div>
                                     </div>
                                     <div class="skills__data">
-                                        <img src="/assets/img/angular.png" alt="" class="projects__img"> 
+                                        <img src="/assets/img/angular.png" alt="" class="projects__img">
                                         <div>
                                             <h3 class="skills__name">Angular</h3>
                                             <span class="skills__level">Intermedio</span>
                                         </div>
                                     </div>
                                     <div class="skills__data">
-                                        <img src="/assets/img/react.png" alt="" class="projects__img"> 
+                                        <img src="/assets/img/react.png" alt="" class="projects__img">
                                         <div>
                                             <h3 class="skills__name">React</h3>
                                             <span class="skills__level">Intermedio</span>
                                         </div>
                                     </div>
-                                    
+
                                 </div>
                             </div>
-                        </div>     
+                        </div>
 
                         <div class="skills__area bd">
                             <h3 class="skills__title">
@@ -216,22 +248,22 @@
                             <div class="skills__box">
                                 <div class="skills__group">
                                     <div class="skills__data">
-                                        <img src="/assets/img/java.png" alt="" class="projects__img"> 
+                                        <img src="/assets/img/java.png" alt="" class="projects__img">
                                         <div>
                                             <h3 class="skills__name">Java</h3>
                                             <span class="skills__level">Basico</span>
                                         </div>
                                     </div>
                                     <div class="skills__data">
-                                        <img src="/assets/img/node-js.png" alt="" class="projects__img"> 
+                                        <img src="/assets/img/node-js.png" alt="" class="projects__img">
                                         <div>
                                             <h3 class="skills__name">NodeJs</h3>
                                             <span class="skills__level">Basico</span>
                                         </div>
                                     </div>
-            
+
                                     <div class="skills__data">
-                                        <img src="/assets/img/express.png" alt="" class="projects__img"> 
+                                        <img src="/assets/img/express.png" alt="" class="projects__img">
                                         <div>
                                             <h3 class="skills__name">Express</h3>
                                             <span class="skills__level">Basico</span>
@@ -241,21 +273,21 @@
 
                                 <div class="skills__group">
                                     <div class="skills__data">
-                                        <img src="/assets/img/python.png" alt="" class="projects__img"> 
+                                        <img src="/assets/img/python.png" alt="" class="projects__img">
                                         <div>
                                             <h3 class="skills__name">Python</h3>
                                             <span class="skills__level">Basico</span>
                                         </div>
                                     </div>
                                     <div class="skills__data">
-                                        <img src="/assets/img/mysql.png" alt="" class="projects__img"> 
+                                        <img src="/assets/img/mysql.png" alt="" class="projects__img">
                                         <div>
                                             <h3 class="skills__name">MySQL</h3>
                                             <span class="skills__level">Basico</span>
                                         </div>
                                     </div>
                                     <div class="skills__data">
-                                        <img src="/assets/img/mongo.png" alt="" class="projects__img"> 
+                                        <img src="/assets/img/mongo.png" alt="" class="projects__img">
                                         <div>
                                             <h3 class="skills__name">MongoDB</h3>
                                             <span class="skills__level">Intermedio</span>
@@ -272,21 +304,21 @@
                             <div class="skills__box">
                                 <div class="skills__group">
                                     <div class="skills__data">
-                                        <img src="/assets/img/git.png" alt="" class="projects__img"> 
+                                        <img src="/assets/img/git.png" alt="" class="projects__img">
                                         <div>
                                             <h3 class="skills__name">Git</h3>
                                             <span class="skills__level">Intermedio</span>
                                         </div>
                                     </div>
                                     <div class="skills__data">
-                                        <img src="/assets/img/azure-depvos.png" alt="" class="projects__img"> 
+                                        <img src="/assets/img/azure-depvos.png" alt="" class="projects__img">
                                         <div>
                                             <h3 class="skills__name">Azure Depvos</h3>
                                             <span class="skills__level">Intermedio</span>
                                         </div>
                                     </div>
                                     <div class="skills__data">
-                                        <img src="/assets/img/postman.png" alt="" class="projects__img"> 
+                                        <img src="/assets/img/postman.png" alt="" class="projects__img">
                                         <div>
                                             <h3 class="skills__name">Postman</h3>
                                             <span class="skills__level">Intermedio</span>
@@ -296,14 +328,14 @@
 
                                 <div class="skills__group">
                                     <div class="skills__data">
-                                        <img src="/assets/img/visual-studio-code.png" alt="" class="projects__img"> 
+                                        <img src="/assets/img/visual-studio-code.png" alt="" class="projects__img">
                                         <div>
                                             <h3 class="skills__name">VS Code</h3>
                                             <span class="skills__level">Intermedio</span>
                                         </div>
                                     </div>
                                     <div class="skills__data">
-                                        <img  src="/assets/img/figma.png" alt="" class="projects__img"> 
+                                        <img src="/assets/img/figma.png" alt="" class="projects__img">
                                         <div>
                                             <h3 class="skills__name">Figma</h3>
                                             <span class="skills__level">Intermedio</span>
@@ -311,23 +343,25 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>        
+                        </div>
                     </div>
                 </div>
             </section>
-        </main>
+        </div>
+    </div>
 
-        <!--=============== FOOTER ===============-->
-        <footer class="footer container">
-            <span class="footer__copy">
-                &#169; Diego Mora
-            </span>
-        </footer>
+    <!--=============== FOOTER ===============-->
+    <footer class="footer container">
+        <span class="footer__copy">
+            &#169; Diego Mora
+        </span>
+    </footer>
 
-        <!--=============== SCROLLREVEAL ===============-->
-        <script src=""></script>
+    <!--=============== SCROLLREVEAL ===============-->
+    <script src=""></script>
 
-        <!--=============== MAIN JS ===============-->
-        <script src="assets/js/main.js"></script>
-    </body>
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/main.js"></script>
+</body>
+
 </html>

@@ -139,10 +139,18 @@ body.dark-theme{
   row-gap: 2rem;
 }
 
+.profile__data-info {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+}
+
 .profile__data{
-  display: grid;
-  text-align: center;
-  margin-bottom: -1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  column-gap: .60rem;
+  height: fit-content;
 }
 
 .profile__perfil{
@@ -161,6 +169,7 @@ body.dark-theme{
 .profile__perfil img{
   width: 125px;
   height: 150px;
+  object-fit: cover;
 }
 
 .profile__border{
