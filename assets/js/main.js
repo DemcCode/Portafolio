@@ -19,35 +19,48 @@ tabs.forEach(tab =>{
     })
 })
 
-/*=============== DARK LIGHT THEME ===============*/ 
-const themeButton = document.getElementById('theme-button')
-const darkTheme = 'dark-theme'
-const iconTheme = 'ri-sun-line'
+// =============== DARK LIGHT THEME ===============
+const themeButton = document.getElementById('theme-button');
+const darkTheme = 'dark-theme';
+const iconTheme = 'ri-sun-line';
 
-// Previously selected topic (if user selected)
-const selectedTheme = localStorage.getItem('selected-theme')
-const selectedIcon = localStorage.getItem('selected-icon')
+// Function to check if localStorage is available
+const isLocalStorageAvailable = () => {
+    try {
+        const test = '__storage_test__';
+        localStorage.setItem(test, test);
+        localStorage.removeItem(test);
+        return true;
+    } catch (e) {
+        return false;
+    }
+};
 
-// We obtain the current theme that the interface has by validating the dark-theme class
-const getCurrentTheme = () => document.body.classList.contains(darkTheme) ? 'dark' : 'light'
-const getCurrentIcon = () => themeButton.classList.contains(iconTheme) ? 'ri-contrast-2-line' : 'ri-sun-line'
+// Functions to get and set theme and icon
+const getSelectedTheme = () => isLocalStorageAvailable() ? localStorage.getItem('selected-theme') : null;
+const getSelectedIcon = () => isLocalStorageAvailable() ? localStorage.getItem('selected-icon') : null;
+const setSelectedTheme = (theme) => isLocalStorageAvailable() && localStorage.setItem('selected-theme', theme);
+const setSelectedIcon = (icon) => isLocalStorageAvailable() && localStorage.setItem('selected-icon', icon);
 
-// We validate if the user previously chose a topic
+// Current theme and icon
+const getCurrentTheme = () => document.body.classList.contains(darkTheme) ? 'dark' : 'light';
+const getCurrentIcon = () => themeButton.classList.contains(iconTheme) ?  'ri-sun-line' : 'ri-contrast-2-line';
+
+// Apply previously selected theme and icon
+const selectedTheme = getSelectedTheme();
+const selectedIcon = getSelectedIcon();
 if (selectedTheme) {
-  // If the validation is fulfilled, we ask what the issue was to know if we activated or deactivated the dark
-  document.body.classList[selectedTheme === 'dark' ? 'add' : 'remove'](darkTheme)
-  themeButton.classList[selectedIcon === 'ri-contrast-2-line' ? 'add' : 'remove'](iconTheme)
+    document.body.classList.toggle(darkTheme, selectedTheme === 'light');
+    themeButton.classList.toggle(iconTheme, selectedIcon === 'ri-sun-line');
 }
 
-// Activate / deactivate the theme manually with the button
+// Toggle theme manually
 themeButton.addEventListener('click', () => {
-    // Add or remove the dark / icon theme
-    document.body.classList.toggle(darkTheme)
-    themeButton.classList.toggle(iconTheme)
-    // We save the theme and the current icon that the user chose
-    localStorage.setItem('selected-theme', getCurrentTheme())
-    localStorage.setItem('selected-icon', getCurrentIcon())
-})
+    document.body.classList.toggle(darkTheme);
+    themeButton.classList.toggle(iconTheme);
+    setSelectedTheme(getCurrentTheme());
+    setSelectedIcon(getCurrentIcon());
+});
 
 
 /*=============== SCROLL REVEAL ANIMATION ===============*/
