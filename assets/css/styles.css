@@ -366,6 +366,7 @@ body.dark-theme{
 
 .projects__button{
   padding: .5rem;
+  width: 40px;
 }
 
 .projects__card:hover .projects__technology{
@@ -373,6 +374,10 @@ body.dark-theme{
 }
 
 /*=============== SKILLS ===============*/
+.projects__img {
+  padding-right: 10px;
+}
+
 .skills__content{
   row-gap: 3.5rem;
 }
@@ -405,7 +410,7 @@ body.dark-theme{
 .skills__data img{
   width: 40px;
   height: 40px;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .skills__name{
