@@ -281,7 +281,9 @@ body.dark-theme{
 /*=============== FILTERS TABS ===============*/
 .filters__content{
   margin: 2rem 0;
-  background-color: var(--text-color-lighten);
+  background: linear-gradient(180deg,
+              hsla(var(--hue), var(--sat), var(--lig), 1) 0%,
+              hsla(var(--hue), var(--sat), var(--lig), .2) 0%);
   padding: .375rem;
   border-radius: .75rem;
   display: flex;
