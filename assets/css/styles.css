@@ -280,7 +280,7 @@ body.dark-theme{
 
 /*=============== FILTERS TABS ===============*/
 .filters__content{
-  margin: 2rem 0;
+  margin: 3rem 0;
   background: linear-gradient(180deg,
               hsla(var(--hue), var(--sat), var(--lig), 1) 0%,
               hsla(var(--hue), var(--sat), var(--lig), .2) 0%);
