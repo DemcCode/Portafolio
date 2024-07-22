@@ -129,6 +129,7 @@ body.dark-theme{
 .profile__data-info {
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 100px;
 }
 
@@ -190,6 +191,12 @@ body.dark-theme{
   color: var(--text-color);
 }
 
+.profile__profession {
+  font-size: var(--normal-font-size);
+  font-weight: 600;
+  color: var(--title-color);
+}
+
 .profile__info-description{
   width: 100%;
 }
@@ -202,7 +209,7 @@ body.dark-theme{
 }
 
 .profile__social-link{
-  font-size: 1.25rem;
+  font-size: 1.7rem;
   color: var(--title-color);
   transition: .3s;
 }
@@ -249,6 +256,8 @@ body.dark-theme{
   margin-top: 1rem;
 }
 
+.profile__contact-email,
+.profile__contact-link,
 .profile__button-cv,
 .button { 
   width: 100%;
@@ -266,7 +275,7 @@ body.dark-theme{
   font-size: 1.25rem;
   color: #fff;
   padding: 0.6rem 0.6rem;
-  border-radius: .5rem;
+  border-radius: 3rem;
   border-color: transparent;
   cursor: pointer;
   transition: .3s;
@@ -395,7 +404,8 @@ body.dark-theme{
 }
 
 .skills__content{
-  row-gap: 3.5rem;
+  justify-content: center;
+  row-gap: 1rem;
 }
 
 .skills__title{
@@ -501,10 +511,11 @@ body.dark-theme{
     text-align: center;
   }
   .projects__content {
-    row-gap: 1rem;
+    row-gap: 1rem;  
   }
-  .skills__content {
-    
+  .skills__area {
+    width: calc(100vw*(375 / 430));
+    max-width: 375px;
   }
 }
 
@@ -513,12 +524,12 @@ body.dark-theme{
     justify-content: center;
     column-gap: 1rem;
     row-gap: 1rem;
-    grid-template-columns: repeat(2, 400px);
+    grid-template-columns: repeat(2, auto);
   }
   
   .skills__content{
-    grid-template-columns: repeat(2, auto);
-    justify-content: space-between;
+    grid-template-columns: repeat(2, 350px);
+    justify-content: center;
     column-gap: 2rem;
     row-gap: 3rem;
   }
