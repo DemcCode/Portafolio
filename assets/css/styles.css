@@ -156,9 +156,9 @@ body.dark-theme{
 
 .profile__perfil img{
   position: relative;
-  top: 35px;
+  top: 2px;
   height: 235px;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .profile__border{
