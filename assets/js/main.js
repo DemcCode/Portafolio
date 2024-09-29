@@ -64,25 +64,14 @@ themeButton.addEventListener('click', () => {
 
 function forceDownload() {
     const link = document.createElement('a');
-    link.href = '/assets/pdf/Desarrollador%20Frontend%20-%20DiegoMora.pdf';
+    link.href = '/assets/pdf/DesarrolladorFrontend-DiegoMora.pdf';
     link.download = 'Desarrollador_Frontend_DiegoMora.pdf';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
   }
 
-
-
 /*=============== SCROLL REVEAL ANIMATION ===============*/
-function forceDownload() {
-    const link = document.createElement('a');
-    link.href = '/assets/pdf/Desarrollador%20Frontend%20-%20DiegoMora.pdf';
-    link.download = 'Desarrollador_Frontend_DiegoMora.pdf';
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-}
-
 document.addEventListener('DOMContentLoaded', function() {
     const buttons = document.querySelectorAll('.filters__button');
     buttons.forEach(button => {
